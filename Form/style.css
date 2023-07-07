@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 30px auto;
+    background-color: #8e44ad;
+}
+
+header{
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.form{
+    padding: 30px 40px;
+    width: 50vw;
+    background-color: #fff;
+}
+
+.inputs{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.inputs label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.inputs input{
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.inputs input:focus{
+    outline: 0;
+    border-color: #999;
+}
+
+.inputs.sucess i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.inputs.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.inputs small{
+    visibility: hidden;
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.inputs.error small{
+    visibility: visible;
+}
+
+.form button{
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+}
